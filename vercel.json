@@ -1,0 +1,8 @@
+{
+    "headers": [
+        { "source": "/", "missing": [{ "type": "header", "key": "cookie" }] }
+    ],
+    "rewrites": [
+        { "source": "/", "destination": "/api/index.js" }
+    ]
+}
