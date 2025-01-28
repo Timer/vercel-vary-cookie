@@ -12,13 +12,7 @@
         },
         {
             "source": "/",
-            "destination": "/api/index.js",
-            "missing": [
-                {
-                    "type": "header",
-                    "key": "cookie"
-                }
-            ]
+            "destination": "/api/index.js"
         }
     ]
 }
