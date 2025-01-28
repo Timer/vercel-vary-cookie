@@ -1,3 +1,4 @@
+// api/index.js
 export default function handler(req, res) {
     const hasCookie = req.headers.cookie;
 

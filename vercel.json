@@ -1,24 +1,15 @@
 {
     "rewrites": [
         {
-            "source": "/",
-            "destination": "/api/index.js",
-            "missing": [
-                {
-                    "type": "header",
-                    "key": "cookie"
-                }
-            ]
+            "source": "/:path*",
+            "destination": "/:path*",
+            "missing": [{ "type": "header", "key": "cookie" }]
         },
         {
-            "source": "/",
-            "destination": "/api/index.js",
-            "has": [
-                {
-                    "type": "header",
-                    "key": "cookie"
-                }
-            ]
-        }
+            "source": "/:path*",
+            "destination": "/:path*",
+            "has": [{ "type": "header", "key": "cookie" }]
+        },
+        { "source": "/", "destination": "/api/index.js" }
     ]
 }
