@@ -3,11 +3,6 @@
         {
             "source": "/(.*)",
             "destination": "/$1",
-            "missing": [{ "type": "header", "key": "cookie" }]
-        },
-        {
-            "source": "/(.*)",
-            "destination": "/$1",
             "has": [{ "type": "header", "key": "cookie" }]
         },
         { "source": "/", "destination": "/api/index.js" }
