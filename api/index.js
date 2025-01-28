@@ -1,5 +1,5 @@
 export default function handler(req, res) {
-    const hasCookie = req.cookies && Object.keys(req.cookies).length > 0;
+    const hasCookie = req.headers.cookie;
 
     if (hasCookie) {
         res.status(200).json({ message: `Hello with cookie: ${JSON.stringify(req.cookies)}` });
