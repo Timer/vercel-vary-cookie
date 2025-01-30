@@ -2,6 +2,7 @@
 export default function handler(req, res) {
     const hasCookie = req.headers.cookie;
 
+    res.setHeader('Vary', 'Cookie');
     if (hasCookie) {
         res.status(200).json({ message: `Hello with cookie: ${JSON.stringify(req.headers.cookie)}` });
     } else {
